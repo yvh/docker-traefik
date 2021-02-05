@@ -1,0 +1,20 @@
+global:
+    sendAnonymousUsage: false
+
+log:
+    level: INFO
+    format: common
+
+providers:
+    docker:
+        endpoint: "unix:///var/run/docker.sock"
+        exposedByDefault: false
+        network: traefik
+        defaultRule: "PathPrefix(`/{{ normalize .Name }}`)"
+
+api:
+    insecure: true
+
+entrypoints:
+    insecure:
+        address: ":80"
