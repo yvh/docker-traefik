@@ -12,13 +12,13 @@
 Create a docker network
 
 ```
-$ docker network create traefik
+docker network create traefik
 ```
 
 Run traefik container
 
 ```
-$ docker-compose up -d
+docker-compose up -d
 ```
 
 ## Template of docker-compose for project
