@@ -12,10 +12,10 @@ services:
             - ./traefik_dynamic_conf.yml:/etc/traefik/traefik_dynamic_conf.yml:delegated
             - ./certs:/certs:ro
         labels:
-            - "traefik.enable=true"
-            - "traefik.http.services.traefik.loadbalancer.server.port=8080"
-            - "traefik.http.routers.traefik.entrypoints=http"
-            - "traefik.http.routers.traefik.rule=Host(`traefik.docker.local`)"
+            - traefik.enable=true
+            - traefik.http.services.traefik.loadbalancer.server.port=8080
+            - traefik.http.routers.traefik.entrypoints=http
+            - traefik.http.routers.traefik.rule=Host(`traefik.docker.local`)
 
 networks:
     default:
