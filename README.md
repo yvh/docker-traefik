@@ -18,7 +18,7 @@ docker network create traefik
 Run traefik container
 
 ```bash
-docker-compose up -d
+docker compose up -d
 ```
 
 ## Template of docker compose for project
