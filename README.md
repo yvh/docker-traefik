@@ -41,10 +41,9 @@ services:
             #- traefik.http.routers.<project-name>_secure.tls=true
         volumes:
             - ./html:/usr/share/nginx/html
-        networks:
-            - traefik
 
 networks:
-    traefik:
+    default:
+        name: traefik
         external: true
 ```
