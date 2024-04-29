@@ -1,7 +1,5 @@
 # docker-traefik
 
-
-
 ## Requirements
 
 - docker
